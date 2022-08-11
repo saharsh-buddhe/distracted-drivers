@@ -1,0 +1,12 @@
+start_x = 10
+x_location = 30
+start_y = 1
+y_location = 30
+new_color = [0.75, 0.2, 0.2]
+
+new_image = np.copy(image)
+for j in range(start_x, x_location):
+  for i in range(start_y, y_location):
+      new_image[i][j] = new_color
+
+plot_one_image(new_image, labels=[image_label])
