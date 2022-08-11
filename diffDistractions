@@ -1,0 +1,21 @@
+# different distractions
+
+# UsingRadio
+for i in range(5):
+  plot_one_image(radio_train_data[i], 
+                 ["UsingRadio"])
+
+# DrinkingCoffee
+for i in range(5):
+  plot_one_image(coffee_train_data[i], 
+                 ["DrinkingCoffee"])
+
+# UsingMirror
+for i in range(5):
+  plot_one_image(mirror_train_data[i],
+                 ["UsingMirror"])
+
+# Attentive
+for i in range(5):
+  plot_one_image(attentive_train_data[i],
+                 ["Attentive"])
