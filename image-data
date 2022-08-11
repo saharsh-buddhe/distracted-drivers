@@ -1,0 +1,14 @@
+for i in range(5): 
+  image = train_data[i,:]
+  image_label = train_labels[i]
+  plot_one_image(image, labels=[image_label])
+
+# last five
+for i in range(6719, 6724): 
+  image = train_data[i,:]
+  image_label = train_labels[i]
+  plot_one_image(image, labels=[image_label])
+radio_train_data = train_data[train_labels=='UsingRadio'] #grab all images whose corresponding label is 'UsingRadio'
+attentive_train_data = train_data[train_labels=='Attentive'] #etc.
+coffee_train_data = train_data[train_labels=='DrinkingCoffee']
+mirror_train_data = train_data[train_labels=='UsingMirror']
