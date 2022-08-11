@@ -1,0 +1,25 @@
+#@title What does image shape represent? { display-mode: "form" }
+
+#@markdown What does the bold number (**224**, 224, 3) represent? 
+Dimension_0  = "fill in" #@param ["image width", "image height","number of colors","fill in"]
+
+#@markdown What does the bold number (224, **224**, 3) represent? 
+Dimension_1  = "fill in" #@param ["image width", "image height","number of colors","fill in"]
+  
+#@markdown What does the bold number (224, 224, **3**) represent? 
+Dimension_2  = "fill in" #@param ["image width", "image height","number of colors","fill in"]
+
+if Dimension_0 == 'image height':
+  print("Yes! Dimension_0 is the height of the image.")
+else:
+  print("Try again for Dimension_0!")
+
+if Dimension_1 == 'image width':
+  print("Yes! Dimension_1 is the width of the image.")
+else:
+  print("Try again for Dimension_1!")
+  
+if Dimension_2 == 'number of colors':
+  print("Yes! Dimension_2 stands for 3 colors - (r,g,b).")
+else:
+  print("Try again for Dimension_2!")
